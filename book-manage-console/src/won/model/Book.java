@@ -1,6 +1,5 @@
 package won.model;
 
-
 import java.util.List;
 
 import static java.lang.System.out;
