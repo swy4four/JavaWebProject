@@ -18,4 +18,27 @@
 		<constructor-arg name="details" value="手机是个好东西，没看视频，能玩游戏，能看小说"></constructor-arg>
 	</bean>
 
+	<bean id="car1" class="com.icss.bean.Car" >
+		<property name="price" value="100000"></property>
+		<property name="brand" value="宝马"></property>
+	</bean>
+
+	<bean id="car2" class="com.icss.bean.Car" >
+		<property name="price" value="200000"></property>
+		<property name="brand" value="奔驰"></property>
+	</bean>
+
+	<!--
+	autowire：
+			byType:按类型完成注入（注入的属性的类型对应的对象只有一个）
+			byName：按名字进行注入（注入对象的属性名和被注入的对象名一摸一样）
+
+	-->
+	<bean id="driver1" class="com.icss.bean.Driver" autowire="byName">
+		<property name="id" value="100"></property>
+		<property name="age" value="30"></property>
+		<property name="name" value="Tom"></property>
+	</bean>
+
+
 </beans>
